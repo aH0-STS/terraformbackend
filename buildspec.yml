@@ -41,6 +41,7 @@ phases:
       - echo Building the backend project...
 
       - mvn clean package -DskipTests
+      - mvn clean verify sonar:sonar -Dsonar.projectKey=employeeyash -Dsonar.host.url=http://98.83.143.169 -Dsonar.login=sqp_75039667aae8329ae78ffbe85ae6e85011d0e006
 
       - echo Building Docker image...
 
